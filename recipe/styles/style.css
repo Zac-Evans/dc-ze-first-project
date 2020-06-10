@@ -1,0 +1,30 @@
+.top{
+    
+   text-align: center;
+   display: block;
+   width: 80%;
+   margin: 0 auto;
+   
+}
+
+.list{
+    width: 50%;
+    text-align:left;
+    margin: 0 auto;
+    padding: 20px;
+    float: center;
+    list-style-position: inside;
+    background-color: rgb(219, 224, 224);
+}
+
+h1{
+    font-family: 'Mukta', sans-serif;
+}
+
+h3{
+    text-align: center;
+}
+
+html{
+    background-color: #f5ed7f;
+}
