@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .container {
+            background-color: beige;
+            padding: 100px;
+            overflow: auto;
+        }
+        .left-side{
+            background-color: cadetblue;
+            width: 50%;
+            height: 300px;
+            float: left;
+            
+        }
+        .right-side{
+            background-color: darkgray;
+            width: 50%;
+            height: 300px;
+            float: right;
+            
+        }
+        </style>
+
+        <script type='text/javascript'>
+           function formSubmitted() {
+                var name = document.getElementById("name").value;
+                document.getElementById('entered_name').innerHTML = name;
+
+                var email = document.getElementById("form_email").value
+                document.getElementById("entered_email").innerHTML = email;
+
+            }
+
+            function clearForm() {
+                document.getElementById("name").value = '';
+                document.getElementById('entered_name').innerHTML = '';
+                document.getElementById("form_email").value= '';
+                document.getElementById("entered_email").innerHTML = '';
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class='container'>
+
+            <div class='left-side'>
+                <h2>Registration Information</h2>
+                 <form>
+                <div class='form-item'>
+                    <label>Name</label>
+                    <input type='text' id='name'>
+                </div>
+                <div class='form-item'>
+                    <label>Email</label>
+                    <input type='email' id='form_email'>
+                </div>
+                
+                <input type="button" value="Submit Form" onclick="formSubmitted()">
+                <input type="button" value="Clear Form" onclick="clearForm()">
+            </form>
+            </div>
+
+            <div class='right-side'>
+                <h2>Entered Information</h2>
+                <p id='entered_name'></p>
+                <p id='entered_email'></p>
+            </div>
+        </div>
+    </body>
+</html>
